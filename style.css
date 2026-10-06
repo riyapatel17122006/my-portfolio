@@ -1,0 +1,81 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+.hero-section {
+    min-height: 90vh;
+    background: linear-gradient(135deg, #e8f0ff, #f8f9fa);
+}
+
+.profile-circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #0d6efd;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.section-padding {
+    padding: 80px 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+    font-weight: bold;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #0d6efd;
+    margin: 12px auto 0;
+    border-radius: 5px;
+}
+
+.skill-card {
+    text-align: center;
+    padding: 30px 15px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-card {
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+#contact {
+    background: #f8f9fa;
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 35px;
+    }
+
+    .section-padding {
+        padding: 60px 15px;
+    }
+}
